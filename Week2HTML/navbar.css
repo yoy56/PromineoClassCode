@@ -1,0 +1,14 @@
+.navbar {
+    background-color: #BB3F3F;
+    margin: auto;
+    width: 100%;
+    padding-left: 0px;
+
+}
+.navbar2 {
+    background-color: #23343c;
+    color: #EAF2EF;
+    padding-left: 40px;
+    display: flex;
+}
+

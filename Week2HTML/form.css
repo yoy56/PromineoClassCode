@@ -1,0 +1,21 @@
+body {
+    background-color: #8E94F2;
+}
+
+
+form{
+    background-color: #0F084B;
+    color: #EAF2EF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left-width: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+span{
+    display: block;
+    margin: auto;
+    width: 40%;
+}

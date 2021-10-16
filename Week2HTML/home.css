@@ -1,0 +1,29 @@
+body {
+    background-color: #8E94F2;
+}
+
+
+.logo {
+    float: left;
+    padding-left: 40px;
+}
+.title {
+    padding-left: 70px;
+    text-decoration-color: #505050;
+}
+
+table{
+    background-color: #0F084B;
+    color: #EAF2EF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left-width: 10px;
+    padding-left: 10px;
+}
+
+.center {
+    display: inline;
+    margin: auto;
+    margin-left: 40%;
+    width: 50%;
+}
