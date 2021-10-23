@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="col.css">
+</head>
+<body class="container">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top"> 
+        <a href="index.html" class="navbar-brand"><span><img class="rounded-right avatar" src="Art/avatar.jpg" 
+            alt="avatar"> Art</span> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a> 
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a> 
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="form.html">Request Form</a> 
+                </li>
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                    Art Gallery
+                    </a> 
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <h6 class="ml-2">Art Types:</h6>
+                        <a class="dropdown-item" href="#">Digital Art</a>
+                        <a class="dropdown-item" href="#">Traditional Art</a>
+                        <a class="dropdown-item" href="#">Pixal Art</a>
+                        <h6 class="ml-2">Art Folders:</h6>
+                        <a class="dropdown-item" href="#">Inktober 2021</a>
+                        <a class="dropdown-item" href="#">Lost Ship: Game Art</a>
+                        <a class="dropdown-item" href="#">Class Projects</a>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    <br><br>
+
+
+    <form class="container bg-secondary text-light border border-5 border-dark">
+        <h3>Commision Request</h3>
+        <div class="row align-items-center border border-5 border-bottom border-dark">
+            <div class="col-md">
+                Enter your Name.
+            </div>
+            <div class="col-md col-md align-self-center">
+                <input type="text" name="name" id="Name" placeholder="Name">
+            </div>
+        </div>
+        <div class="row align-items-center border border-5 border-bottom border-dark">
+            <div class="col-md">
+                <div>
+                    Enter your Username. <br>
+                    
+                    <div class="row">
+                        <div class="col-sm-1 mr-3">
+                            Site:
+                        </div>
+                        <div>
+                            <input type="radio" name="type" id="twit">-Twitter <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 mr-3"></div>
+                        <div>
+                            <input type="radio" name="type" id="insta">-Instagram <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 mr-3"></div>
+                        <div>
+                            <input type="radio" name="type" id="devart">-DeviantArt <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-1 mr-3"></div>
+                        <div>
+                            <input type="radio" name="type" id="othr">-Other <br>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+            <div class="col-md align-self-center">
+                <input type="text" name="userName" id="uName" placeholder="Username">
+            </div>
+        </div>
+        <div class="row border border-5 border-bottom border-dark align-self-center">
+            <div class="col-md">
+                Describe the Commission.
+            </div>
+            <div class="col-md col-md align-self-center">
+                <textarea class="para-box w-100" name="Text1" cols="40" rows="5"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 text-center">
+                <input class="btn btn-success  w-25" type="submit" value="Confirm"> 
+            </div>
+        </div>
+        
+    </form>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
