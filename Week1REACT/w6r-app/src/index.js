@@ -3,12 +3,17 @@ import ReactDOM from 'react-dom';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import './index.css';
 import App from './App';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.js'
 import LoginBox from './components/login_box';
+import Navbar from './components/narbar';
 import reportWebVitals from './reportWebVitals';
 
 
 ReactDOM.render(
-  <LoginBox />,
+  <div>
+    <Navbar/>
+    <LoginBox/>
+  </div>,
   document.getElementById('root')
 );
 
