@@ -6,7 +6,7 @@ export default class Movie extends React.Component {
         this.state = {
             Img : props.Img,
             Title : props.Title,
-            Desc : props.Desc || "No Description...",
+            Desc : props.Desc,
             Id : props.Id
         };
     }
@@ -15,7 +15,9 @@ export default class Movie extends React.Component {
 
         return(
             <div className='container border border-solid border-primary'>
-                <img src={this.Img} alt={`Cover for the Movie ${this.Title}`} />
+                <img src={this.props.Img ?? "./Imgs/PNF.png"} alt={`Cover for the Movie: "${this.props.Title}"`} />
+                <h2>{this.props.Title}</h2>
+                <p>{this.props.Desc ?? "No Description..."}</p>
             </div>
         );
     }
