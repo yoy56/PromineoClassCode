@@ -17,10 +17,18 @@ export default class Movie extends React.Component {
 
         return(
             <div className='container border border-solid border-primary'>
-                <img src={this.props.Img ?? "./Imgs/PNF.png"} alt={`Cover for the Movie: "${this.props.Title}"`} />
-                <h2>{this.props.Title}</h2>
-                <Stars Amount={this.props.StarRate}/>
-                <p>{this.props.Desc ?? "No Description..."}</p>
+                <div className='row my-2 overflow-hidden' style={{height : '275px'}}>
+                    <div className='col'>
+                        <img src={this.props.Img ?? "./Imgs/PNF.png"} 
+                        alt={`Cover for the Movie: "${this.props.Title}"`} className='text-left overflow-hidden' 
+                        height='275px' width='183px'/>
+                    </div>
+                    <div className='col-sm overflow-auto'>
+                        <h2 className='align-middle'>{this.props.Title}</h2>
+                        <Stars Amount={this.props.StarRate}/>
+                        <p className=''>{this.props.Desc ?? "No Description..."}</p>
+                    </div>
+                </div>
             </div>
         );
     }
