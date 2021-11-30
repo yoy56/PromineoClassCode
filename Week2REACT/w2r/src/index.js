@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
+import '../src/components/Star.css'
 import MovieList from './components/MovieList';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

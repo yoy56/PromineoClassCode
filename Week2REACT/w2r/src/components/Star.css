@@ -1,0 +1,9 @@
+.star {
+    height: 0;
+  width: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid white;
+  border-bottom: 10px solid white;
+  border-top: 10px solid white;
+
+}
