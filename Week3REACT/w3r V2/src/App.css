@@ -13,6 +13,18 @@
   }
 }
 
+.NewPhoto:hover {
+  border-style: solid;
+  border-width: 3px;
+  border-color: gold;
+}
+
+.FavPhoto:hover {
+  border-style: solid;
+  border-width: 3px;
+  border-color: red;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

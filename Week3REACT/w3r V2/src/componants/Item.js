@@ -25,23 +25,14 @@ export const Item = (props) => {
             ))}
         </ul>
     );
-                if (props.fav) {
-                    return(
-                        <div>
-                            <h1>{item.image.id}</h1>
-                            <img src={item.image.url} className="w-25"></img>
-                            {/* {breeds()} */}
-                        </div>
-                    )
-                } else {
-                    return(
-                        <div>
-                            <h1>{item.id}</h1>
-                            <img src={item.url} className="w-25" onClick={(e) => props.FavItem(item.id)}/>
-                            {/* {breeds()} */}
-                        </div>
-                    )
-                }
+    console.log(item);
+            return(
+                    <div>
+                        <h1>{item.id}</h1>
+                        <img src={item.url} className={`${props.ItemType} w-25`} onClick={(e) => props.ClickEvent(props.id)}/>
+                        {/* {breeds()} */}
+                    </div>
+                  )
     
 
 };

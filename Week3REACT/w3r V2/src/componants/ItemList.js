@@ -43,18 +43,26 @@ export class ItemList extends Component{
         this.fetchItems();
     }
 
+    DeleteItem = async (itemID) => {
+        await ItemAPI.delete(itemID, 'favourites');
+        this.fetchItems();
+    }
+
     render() {
         return(
             <div className="Item-list">
+                <h3>Favourites</h3>
                 {this.state.Items.map((item) => (
                     <div className={item.id} key={item.id}>
                         <Item
-                        item={item}
-                        fav={true}
+                        item={item.image}
+                        ClickEvent={this.DeleteItem}
+                        ItemType='FavPhoto'
+                        id={item.id}
                         /> 
                     </div>
                 ))}
-                <NewRoomForm NewItems={this.state.NewItems} FetchNewItems={this.fetchNewItems} FavItem={this.FavItem}/>
+                <NewRoomForm NewItems={this.state.NewItems} FetchNewItems={this.fetchNewItems} ClickEvent={this.FavItem} ItemType='NewPhoto'/>
             </div>
         )
     }

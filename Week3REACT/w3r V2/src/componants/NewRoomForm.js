@@ -40,8 +40,9 @@ export const NewRoomForm = (props) => {
                     <div>
                         <Item
                         item={e}
-                        fav={false}
-                        FavItem={props.FavItem}
+                        ClickEvent={props.ClickEvent}
+                        ItemType={props.ItemType}
+                        id={e.id}
                         // updateItem={this.updateItem}
                         /> 
                     </div>

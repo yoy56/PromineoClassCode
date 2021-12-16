@@ -49,6 +49,19 @@ class Api {
             console.log('Error:', e);
         }
     }
+
+    delete = async (itemid,end) => {
+        try {
+            const resp = await fetch(`${ENDPOINT}/${end}/${itemid}`, {
+                method: 'DELETE',
+                headers: {
+                    'x-api-key': Akey
+                }
+            })
+        } catch (e) {
+            console.log('Error:', e);
+        }
+    }
 }
 
 export const ItemAPI = new Api();
